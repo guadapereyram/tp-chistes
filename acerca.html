@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acerca de mí</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mis Chistes</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="acerca.html">AcercaDe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>Acerca de mí</h1>
+    <p>Hola, soy Guadalupe Pereyra, estudiante de la carrera de Sistemas.</p>
+    <p>Esta web fue desarrollada como parte de un trabajo práctico para la materia "Diseño y Desarrollo Web".</p>
+    <p>Podés encontrarme en:</p>
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p>Contacto: <a href="mailto:guadalupe@email.com">guadalupe@email.com</a></p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
